@@ -1,0 +1,10 @@
+
+{% for names in names %}
+<!-- <a href="{% url 'companies' %}"> -->
+  <h1>{{ names }}</h1>
+  <a href="{% url 'profile' names.id %}">profile</a>
+</a>
+
+{% endfor %}
+<br>
+<a href="{% url 'create-product' %}">Create a new product</a>

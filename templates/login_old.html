@@ -1,0 +1,14 @@
+<div>
+  <form method="POST" action="">
+    {% csrf_token %}
+    <input type="text" placeholder="Enter Your Username.... " name="username" />
+    <hr />
+    <input type="password" name="password" />
+    <hr />
+    <input type="submit" value="Submit" />
+  </form>
+</div>
+
+<div>
+  <p>Haven't Signed Up Yet? <a href="{% url 'sign-up' %}">Sign Up</a></p>
+</div>
